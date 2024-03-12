@@ -1,0 +1,5 @@
+Alex Korp,3000
+Mykyta Borysenko,2000
+Sitarama Raju,1000
+Jack Jones,1500
+Duke Nukem, 1750
