@@ -3,7 +3,7 @@ def parse_input(user_input):
     cmd = cmd.strip().lower()
     return cmd, *args
 
-def add_contact(args, contacts):
+def add_contact(args, contacts): # Якщо таке ім’я вже є, ф-ція пропонує скористатися командою "change"
     name, phone = args
     if name in contacts:
         return f"{name}'s phone is already in the list.\nPlease use 'change' command to update the phone."
@@ -11,7 +11,7 @@ def add_contact(args, contacts):
         contacts[name] = phone
         return "Contact added."
 
-def change_contact(args, contacts):
+def change_contact(args, contacts): # Тут ще більш удосконалено. Якщо користувач хоче змінювати неіснуючий контакт, бот пропонує натомість його створити 
     name, phone = args
     if name in contacts:
         contacts[name] = phone
@@ -22,8 +22,7 @@ def change_contact(args, contacts):
             contacts[name] = phone
             return f"{name}'s phone added to the list."
         else:
-            pass
-
+            return f""
 
 def show_contact(args, contacts):
     name = args[0]
