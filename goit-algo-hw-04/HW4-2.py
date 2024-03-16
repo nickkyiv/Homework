@@ -10,5 +10,5 @@ def get_cats_info(path):
     except (FileNotFoundError, ValueError):
         print("Sorry, missing file or wrong file format.")
     
-cats_info = get_cats_info("goit-algo-hw-04\cats_info.txt")
+cats_info = get_cats_info(".\cats_info.txt")
 print(cats_info)
