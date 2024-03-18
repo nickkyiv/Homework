@@ -16,7 +16,7 @@ def total_salary(path):
                 total_s += int(salary) # Total salary calculation
                 times += 1
         average_s = total_s / times # Average salary calculation   
-        return (total_s, average_s)
+        return total_s, average_s
     except (FileNotFoundError, ValueError):
         print("Sorry, missing file or wrong file format.")
 try:
