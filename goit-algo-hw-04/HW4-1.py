@@ -20,7 +20,7 @@ def total_salary(path):
     except (FileNotFoundError, ValueError):
         print("Sorry, missing file or wrong file format.")
 try:
-    total, average = total_salary('./hw4-1-salaries.txt')
+    total, average = total_salary('salaries.txt')
     print(f"Загальна сума заробітної плати: {total}, середня заробітна плата: {average}")
 except TypeError:
     pass
