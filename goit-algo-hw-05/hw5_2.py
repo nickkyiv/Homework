@@ -11,7 +11,7 @@ def sum_profit(text, func):
     sum = 0
     for number in func(text):
         sum += number
-        return sum
+    return sum
 
 text = """Загальний дохід працівника складається з декількох частин:
 1000.01 як основний дохід, доповнений додатковими надходженнями 
