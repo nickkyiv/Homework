@@ -1,13 +1,11 @@
 import re
 from typing import Callable
 
-def generator_numbers(text: str) -> float:
+def generator_numbers(text: str):
     for result in re.split(r"\s", text):
         if re.search(r"\d+", result):
             yield float(result)
-        else:
-            pass
-
+        
 def sum_profit(text: str, func: Callable[[str], float]) -> float:
     sum = 0
     for number in func(text):
