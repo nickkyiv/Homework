@@ -1,6 +1,5 @@
 import sys
 from pathlib import Path
-import collections
 
 def main():
     try:
@@ -11,15 +10,16 @@ def main():
             display_log_counts(level_count)
         else:
             quit("Please enter arguments: path (required) and level (optional).")
+
+        if len(sys.argv) > 2:            
+            level_arg = sys.argv[2]
+            filtered_list = filter_logs_by_level(string_list, level_arg)
+            display_level_info(filtered_list, level_arg)
+    
     except OSError as err:
         print('Помилка доступу до файлу: ', err)
     except ValueError:
         print("Хибний формат файлу.")
-
-    if len(sys.argv) > 2:            
-        level_arg = sys.argv[2]
-        filtered_list = filter_logs_by_level(string_list, level_arg)
-        display_level_info(filtered_list, level_arg)
     
 def load_logs(file_path: str) -> list: # для завантаження логів з файлу.
     with open(file_path, "r", encoding="UTF-8") as file:
