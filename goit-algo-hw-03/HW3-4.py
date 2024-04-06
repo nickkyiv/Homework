@@ -35,10 +35,10 @@ def get_upcoming_birthdays(a):
     return upcoming_birthdays
 
 users = [
-    {"name": "John Doe", "birthday": "1985.03.20"},
-    {"name": "Will Smith", "birthday": "1990.03.22"},
-    {"name": "Ivanka Trump", "birthday": "1984.03.23"},
-    {"name": "Peter Gabriel", "birthday": "1975.03.24"},
+    {"name": "John Doe", "birthday": "1985.04.05"},
+    {"name": "Will Smith", "birthday": "1990.04.06"},
+    {"name": "Ivanka Trump", "birthday": "1984.04.23"},
+    {"name": "Peter Gabriel", "birthday": "1975.04.24"},
     {"name": "George Paine", "birthday": "1994.02.25"}
 ]
 
