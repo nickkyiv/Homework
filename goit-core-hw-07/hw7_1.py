@@ -208,7 +208,7 @@ def main():
 
         elif command == "hello":
             hello = """Please enter one of the following commands:
-- add [name] [phone number]
+- add [name] [phone number] (number must be 10 digits long)
 - change [name] [old number] [new number]
 - phone [name]
 - all
