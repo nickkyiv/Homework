@@ -81,7 +81,6 @@ class AddressBook(UserDict):
 
         for name, record in self.data.items():
             if record.birthday:
-                # birthday = datetime.strptime(user['birthday'], "%Y.%m.%d").date()
                 prepared_users.append({"name": name, "birthday": record.birthday.date})
 
         # Функція для визначення, скільки днів додавати для ДН, що припадає на вікенд:
