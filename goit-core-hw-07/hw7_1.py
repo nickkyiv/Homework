@@ -61,7 +61,7 @@ class Record:
 
     def __str__(self):
         if self.birthday:
-            return f"Contact name: {self.name.value}, phone(s): {'; '.join(p.value for p in self.phones)}, birthday: {self.birthday.date.strftime("%d.%m.%Y")}"
+            return f"Contact name: {self.name.value}, phone(s): {'; '.join(p.value for p in self.phones)}, birthday: {self.birthday.date.strftime('%d.%m.%Y')}"
         else:
             return f"Contact name: {self.name.value}, phone(s): {'; '.join(p.value for p in self.phones)}"
 
