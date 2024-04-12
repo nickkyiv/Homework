@@ -186,7 +186,7 @@ def show_birthday(args, book):
     if record is None:
         return "This contact does not exist."
     else:
-        return f"{name}'s birthday is {record.birthday.date.strftime("%d.%m.%Y")}"
+        return f"{name}'s birthday is {record.birthday.date.strftime('%d.%m.%Y')}"
 
 
 def save_data(book, filename="addressbook.pkl"):
